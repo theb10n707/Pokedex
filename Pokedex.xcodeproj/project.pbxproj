@@ -14,6 +14,7 @@
 		4432B7F11C814BC40065188A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4432B7EF1C814BC40065188A /* LaunchScreen.storyboard */; };
 		4432B7FC1C814BC40065188A /* PokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4432B7FB1C814BC40065188A /* PokedexTests.swift */; };
 		4432B8071C814BC40065188A /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4432B8061C814BC40065188A /* PokedexUITests.swift */; };
+		4432B8151C8151390065188A /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4432B8141C8151390065188A /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4432B8021C814BC40065188A /* PokedexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4432B8061C814BC40065188A /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		4432B8081C814BC40065188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4432B8141C8151390065188A /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		4432B7E51C814BC40065188A /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				4432B8141C8151390065188A /* pokemon.csv */,
 				4432B7E61C814BC40065188A /* AppDelegate.swift */,
 				4432B7E81C814BC40065188A /* ViewController.swift */,
 				4432B7EA1C814BC40065188A /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				4432B7F11C814BC40065188A /* LaunchScreen.storyboard in Resources */,
 				4432B7EE1C814BC40065188A /* Assets.xcassets in Resources */,
+				4432B8151C8151390065188A /* pokemon.csv in Resources */,
 				4432B7EC1C814BC40065188A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = auto.Pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = auto.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = auto.Pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = auto.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
